@@ -1,0 +1,512 @@
+<html>
+	<head>
+		<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+		<script src="https://cozmo.github.io/jsQR/jsQR.js"></script>
+		<meta charset="utf-8">
+		<title>Snitch v2</title>
+		<style>
+		.star-checked {
+			color: orange;
+		}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-sm bg-light">
+			<a class="navbar-brand" href="" style="font-size: 40px">Snitch v2</a>
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#" id="store-list" style="font-size: 32px; margin-left: 60px">Список магазинов</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" id="create-review" style="font-size: 32px; margin-left: 60px">Написать отзыв</a>
+				</li>
+			</ul>
+		</nav>
+		
+		<!--<div class="container-fluid py-3" id="main-container">
+			<div class="card" style="margin-bottom: 20px">
+				<div class="card-block px-3">
+					<h4 class="card-title" style="font-size: 40px">Lorem ipsum dolor sit amet</h4>
+					<p class="card-text" style="font-size: 32px">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+			</div>
+		</div>-->
+		
+		<div class="container-fluid py-3" id="main-container">
+			
+		</div>
+	  
+	  
+		<script>
+		
+			star_number = 0
+			function add(sno)
+			{
+				star_number = sno
+				for (var i = 1; i <= sno; i++)
+				{
+					$("#star" + i).addClass('star-checked').text('★')
+				}
+				for (var i = sno + 1; i <= 5; i++)
+				{
+					$("#star" + i).removeClass('star-checked').text('☆')
+				}
+			}
+		
+			function AnalyzeComments(comments)
+			{
+				var comment_count = comments.length
+				var comment_distr = [0, 0, 0, 0, 0];
+				var mean = 0
+				for (var i = 0; i < comment_count; i++)
+				{
+					comment_distr[comments[i].rating - 1] += 1
+					mean += comments[i].rating
+				}
+				mean = Math.round(mean / comment_count * 10) / 10
+				var max = Math.max(comment_distr[4], comment_distr[3], comment_distr[2], comment_distr[1], comment_distr[0])
+				if (max == 0)
+				{
+					max = 1
+				}
+				return {
+					count: comment_count,
+					mean: mean,
+					abs_5: Math.round(comment_distr[4] * 100 / comment_count) + "%",
+					abs_4: Math.round(comment_distr[3] * 100 / comment_count) + "%",
+					abs_3: Math.round(comment_distr[2] * 100 / comment_count) + "%",
+					abs_2: Math.round(comment_distr[1] * 100 / comment_count) + "%",
+					abs_1: Math.round(comment_distr[0] * 100 / comment_count) + "%",
+					rel_5: Math.round(comment_distr[4] * 100 / max) + "%",
+					rel_4: Math.round(comment_distr[3] * 100 / max) + "%",
+					rel_3: Math.round(comment_distr[2] * 100 / max) + "%",
+					rel_2: Math.round(comment_distr[1] * 100 / max) + "%",
+					rel_1: Math.round(comment_distr[0] * 100 / max) + "%"
+				}
+			}
+			
+			function GetWord(n)
+			{
+				if (n == 5)
+					return 'Отлично'
+				else if (n == 4)
+					return 'Хорошо'
+				else if (n == 3)
+					return 'Нормально'
+				else if (n == 2)
+					return 'Плохо'
+				else if (n == 1)
+					return 'Ужасно'
+				else
+					return '???'
+			}
+			
+			function GetStars(n)
+			{
+				if (n == 5)
+					return '★★★★★'
+				else if (n == 4)
+					return '★★★★☆'
+				else if (n == 3)
+					return '★★★☆☆'
+				else if (n == 2)
+					return '★★☆☆☆'
+				else if (n == 1)
+					return '★☆☆☆☆'
+				else
+					return '☆☆☆☆☆'
+			}
+			
+			function ProcessResponse(response)
+			{
+				if (response.error != null)
+				{
+					alert(response.error);
+				}
+				else
+				{
+					if (response.action == null)
+					{
+						alert("Unexpected response received from the node");
+						return;
+					}
+					
+					if (response.action == "ListStores")
+					{
+						$("#main-container").html("")
+						response.stores.forEach(function(element) {
+							var card = $('<div class="card" style="margin-bottom: 20px" />').append(
+								$('<div class="row " />').append(
+									$('<div class="col-sm-3" />').append(
+										$('<img style="width: 100%">').attr("src", element.image)
+									)
+								).append(
+									$('<div class="col-sm-9 px-3" />').append(
+										$('<h4 class="card-title" style="font-size: 40px" />').text(element.name)
+									).append(
+										$('<p class="card-text" style="font-size: 32px" />').text(element.description)
+									)
+								)
+							).click({store_id: element.id}, function(event) {
+								var store_id = event.data.store_id
+								$.ajax({
+									type: "POST",
+									url: "/ListItems",
+									dataType: "json",
+									data: {store_id: store_id},
+									success: function(result){
+										ProcessResponse(result)
+									},
+									error: function(data){
+										alert("Fail!")
+									}
+								});
+							})
+							$("#main-container").append(card)
+						});
+					}
+					else if (response.action == "ListItems")
+					{
+						$("#main-container").html("")
+						response.items.forEach(function(element) {
+							var card = $('<div class="card" style="margin-bottom: 20px" />').append(
+								$('<div class="row " />').append(
+									$('<div class="col-sm-3" />').append(
+										$('<img style="width: 100%">').attr("src", element.image)
+									)
+								).append(
+									$('<div class="col-sm-9 px-3" />').append(
+										$('<h4 class="card-title" style="font-size: 40px" />').text(element.name)
+									).append(
+										$('<p class="card-text" style="font-size: 32px" />').text(element.description)
+									)
+								)
+							).click({item_id: element.id}, function(event) {
+								var item_id = event.data.item_id
+								$.ajax({
+									type: "POST",
+									url: "/ListComments",
+									dataType: "json",
+									data: {item_id: item_id},
+									success: function(result){
+										ProcessResponse(result)
+									},
+									error: function(data){
+										alert("Fail!")
+									}
+								});
+							})
+							$("#main-container").append(card)
+						})
+					}
+					else if (response.action == "ListComments")
+					{
+						var analysis = AnalyzeComments(response.comments)
+						$("#main-container").html("")
+						var main_card = $('<div class="card" style="margin-bottom: 20px" />').append(
+							$('<div class="row " />').append(
+								$('<div class="col-sm-4" />').append(
+									$('<img style="width: 100%">').attr("src", response.item.image)
+								)
+							).append(
+								$('<div class="col-sm-8 px-3" />').append(
+									$('<h4 class="card-title" style="font-size: 40px" />').text(response.item.name)
+								).append(
+									$('<p class="card-text" style="font-size: 32px" />').text("Средняя оценка: " + analysis.mean + " (" + analysis.count + " отзывов)")
+								).append(
+									$('<div class="row">').append(
+										$('<div class="col-sm-6">').append(
+											$('<div class="progress" style="margin-top: 20px">').append(
+												$('<div class="progress-bar" style="width:' + analysis.rel_5 + '; background-color: #00cc00">')
+											)
+										)
+									).append(
+										$('<div class="col-sm-6">').append(
+											$('<p class="card-text" style="font-size: 32px">').text('Отлично: ' + analysis.abs_5)
+										)
+									)
+								).append(
+									$('<div class="row">').append(
+										$('<div class="col-sm-6">').append(
+											$('<div class="progress" style="margin-top: 20px">').append(
+												$('<div class="progress-bar" style="width:' + analysis.rel_4 + '; background-color: #99cc00">')
+											)
+										)
+									).append(
+										$('<div class="col-sm-6">').append(
+											$('<p class="card-text" style="font-size: 32px">').text('Хорошо: ' + analysis.abs_4)
+										)
+									)
+								).append(
+									$('<div class="row">').append(
+										$('<div class="col-sm-6">').append(
+											$('<div class="progress" style="margin-top: 20px">').append(
+												$('<div class="progress-bar" style="width:' + analysis.rel_3 + '; background-color: #cccc00">')
+											)
+										)
+									).append(
+										$('<div class="col-sm-6">').append(
+											$('<p class="card-text" style="font-size: 32px">').text('Нормально: ' + analysis.abs_3)
+										)
+									)
+								).append(
+									$('<div class="row">').append(
+										$('<div class="col-sm-6">').append(
+											$('<div class="progress" style="margin-top: 20px">').append(
+												$('<div class="progress-bar" style="width:' + analysis.rel_2 + '; background-color: #cc9900">')
+											)
+										)
+									).append(
+										$('<div class="col-sm-6">').append(
+											$('<p class="card-text" style="font-size: 32px">').text('Плохо: ' + analysis.abs_2)
+										)
+									)
+								).append(
+									$('<div class="row">').append(
+										$('<div class="col-sm-6">').append(
+											$('<div class="progress" style="margin-top: 20px">').append(
+												$('<div class="progress-bar" style="width:' + analysis.rel_1 + '; background-color: #cc0000">')
+											)
+										)
+									).append(
+										$('<div class="col-sm-6">').append(
+											$('<p class="card-text" style="font-size: 32px">').text('Ужасно: ' + analysis.abs_1)
+										)
+									)
+								)
+							)
+						)
+						$("#main-container").append(main_card)
+						response.comments.forEach(function(element) {
+							var card = $('<div class="card" style="margin-bottom: 20px">').append(
+								$('<div class="card-block px-3">').append(
+									$('<h4 class="card-title" style="font-size: 40px; float: right">').text(GetStars(element.rating))
+								).append(
+									$('<h4 class="card-title" style="font-size: 40px">').text(GetWord(element.rating))
+								).append(
+									$('<p class="card-text" style="font-size: 32px">').text(element.comment)
+								)
+							)
+							$("#main-container").append(card)
+						})
+					}
+					else if (response.action == "LoadItem")
+					{
+						$("#main-container").html("")
+						var card = $('<div class="card" style="margin-bottom: 20px" />').append(
+							$('<div class="row " />').append(
+								$('<div class="col-sm-3" />').append(
+									$('<img style="width: 100%">').attr("src", response.item.image)
+								)
+							).append(
+								$('<div class="col-sm-9 px-3" />').append(
+									$('<h4 class="card-title" style="font-size: 40px" />').text(response.item.name)
+								).append(
+									$('<p class="card-text" style="font-size: 32px" />').text(response.item.description)
+								)
+							)
+						).append(
+							$('<div class="card-block px-3">').append(
+								$('<center>').append(
+									$('<span id="star1" onclick="add(1)" style="font-size: 80px">').text('☆')
+								).append(
+									$('<span id="star2" onclick="add(2)" style="font-size: 80px">').text('☆')
+								).append(
+									$('<span id="star3" onclick="add(3)" style="font-size: 80px">').text('☆')
+								).append(
+									$('<span id="star4" onclick="add(4)" style="font-size: 80px">').text('☆')
+								).append(
+									$('<span id="star5" onclick="add(5)" style="font-size: 80px">').text('☆')
+								)
+							).append(
+								$('<div class="form-group">').append(
+									$('<textarea class="form-control" rows="5" id="comment" style="font-size: 40px">')
+								)
+							).append(
+								$('<center>').append(
+									$('<button type="button" class="btn btn-secondary" style="font-size: 40px">').text('Отправить').click(function() {
+										$.ajax({
+											type: "POST",
+											url: "/AddComment",
+											dataType: "json",
+											data: {item_id: response.item.id, signature: "303132333435", comment_data: JSON.stringify({rating: star_number, comment: $('#comment').text()})},
+											success: function(result){
+												ProcessResponse(result)
+											},
+											error: function(data){
+												alert("Fail!")
+											}
+										})
+									})
+								)
+							).append(
+								$('<<br>')
+							)
+						)
+						$("#main-container").append(card)
+					}
+					else if (response.action == "AddComment")
+					{
+						$("#main-container").html("")
+						var card = $('<div class="card" style="margin-bottom: 20px">').append(
+							$('<div class="card-block px-3">').append(
+								$('<h4 class="card-title" style="font-size: 40px">').text('Готово!')
+							).append(
+								$('<p class="card-text" style="font-size: 32px">').text('Ваш отзыв обрабатывается и скоро появится в списке.')
+							)
+						)
+						$("#main-container").append(card)
+					}
+				}
+			}
+			
+			$(document).ready(function() {
+				$( ".card" ).hover(
+					function() {
+						$(this).addClass('shadow-lg').css('cursor', 'pointer');
+					}, function() {
+						$(this).removeClass('shadow-lg');
+					}
+				);
+			});
+			
+			$("#store-list").click(function() {
+				$.ajax({
+					type: "POST",
+					url: "/ListStores",
+					dataType: "json",
+					data: {},
+					success: function(result){
+						ProcessResponse(result)
+					},
+					error: function(data){
+						alert("Fail!")
+					}
+				})
+			})
+			
+			var read_qr = false
+			
+			function StartReadingQr()
+			{
+				read_qr = true
+				var video = document.createElement("video");
+				var canvasElement = document.getElementById("canvas");
+				var canvas = canvasElement.getContext("2d");
+				var loadingMessage = document.getElementById("loadingMessage");
+				var outputContainer = document.getElementById("output");
+				var outputMessage = document.getElementById("outputMessage");
+				var outputData = document.getElementById("outputData");
+
+				function drawLine(begin, end, color) {
+				  canvas.beginPath();
+				  canvas.moveTo(begin.x, begin.y);
+				  canvas.lineTo(end.x, end.y);
+				  canvas.lineWidth = 4;
+				  canvas.strokeStyle = color;
+				  canvas.stroke();
+				}
+
+				// Use facingMode: environment to attemt to get the front camera on phones
+				navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } }).then(function(stream) {
+				  var track = stream.getVideoTracks()[0];
+				  //track.applyConstraints({advanced: [{brightness: 100}]})
+				  //alert(track.getConstraints());
+				  
+				  alert(JSON.stringify(track.getConstraints()))
+				  track.applyConstraints({
+					advanced: [{torch: true}]
+				  });
+				  
+				  video.srcObject = stream;
+				  video.setAttribute("playsinline", true); // required to tell iOS safari we don't want fullscreen
+				  video.play();
+				  video.className = "brightness";
+				  requestAnimationFrame(tick);
+				}).catch(function(err) {alert(err)});
+
+				function tick() {
+				  loadingMessage.innerText = "⌛ Loading video..."
+				  if (video.readyState === video.HAVE_ENOUGH_DATA) {
+					loadingMessage.hidden = true;
+					canvasElement.hidden = false;
+					outputContainer.hidden = false;
+
+					canvasElement.height = video.videoHeight;
+					canvasElement.width = video.videoWidth;
+					canvas.drawImage(video, 0, 0, canvasElement.width, canvasElement.height);
+					var imageData = canvas.getImageData(0, 0, canvasElement.width, canvasElement.height);
+					var code = jsQR(imageData.data, imageData.width, imageData.height, {
+					  inversionAttempts: "dontInvert",
+					});
+					if (code) {
+					  drawLine(code.location.topLeftCorner, code.location.topRightCorner, "#FF3B58");
+					  drawLine(code.location.topRightCorner, code.location.bottomRightCorner, "#FF3B58");
+					  drawLine(code.location.bottomRightCorner, code.location.bottomLeftCorner, "#FF3B58");
+					  drawLine(code.location.bottomLeftCorner, code.location.topLeftCorner, "#FF3B58");
+					  outputData.innerText = code.data;
+					}
+					else
+					{
+						outputData.innerText = '';
+					}
+				  }
+				  if (read_qr)
+				    requestAnimationFrame(tick);
+				}
+			}
+			
+			function StopReadingQr()
+			{
+				read_qr = false
+			}
+			
+			$("#create-review").click(function() {
+				$("#main-container").html("").append(
+					$('<div id="loadingMessage">').text('Unable to access video stream (please make sure you have a webcam enabled)')
+				).append(
+					$('<canvas id="canvas" style="width: 300px; height: 300px"></canvas>')
+				).append(
+					$('<div id="output" hidden>').append(
+						$('<div id="outputMessage">').text('No QR code detected.')
+					).append(
+						$('<div hidden>').append(
+							$('<b>').text('Data: ')
+						).append(
+							$('<span id="outputData">')
+						)
+					)
+				).append(
+					$('<button type="button" class="btn btn-secondary">').text('Сканировать').click(function() {
+						var output_data = $('#outputData').text()
+						if (output_data != '')
+						{
+							StopReadingQr()
+							var qr_data = JSON.parse(output_data)
+							$.ajax({
+								type: "POST",
+								url: "/LoadItem",
+								dataType: "json",
+								data: {item_id: qr_data.item_id},
+								success: function(result){
+									ProcessResponse(result)
+								},
+								error: function(data){
+									alert("Fail!")
+								}
+							})
+						}
+					})
+				)
+				StartReadingQr()
+				
+			})
+		</script>
+	</body>
+</html>

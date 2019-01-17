@@ -1,0 +1,29 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  EllipticCurve.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\isaac32_engine.h(15): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  EllipticCurveTwister.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\isaac32_engine.h(15): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  FFT.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  FiniteFieldCubicExtension.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\isaac32_engine.h(15): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  FiniteFieldPrime.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\isaac32_engine.h(15): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  FiniteFieldQuadraticExtension.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\isaac32_engine.h(15): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  Power.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  Generating Code...
+Power.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+FiniteFieldPrime.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+FiniteFieldQuadraticExtension.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+FiniteFieldCubicExtension.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+FFT.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+EllipticCurveTwister.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+EllipticCurve.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  elliptic_curves.vcxproj -> E:\Projects\elliptic_curves\lib\x64\Debug\elliptic_curves.lib

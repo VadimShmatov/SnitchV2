@@ -1,0 +1,31 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  BitLength.cpp
+e:\projects\elliptic_curves\elliptic_curves\bitlength.cpp(21): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned long', possible loss of data
+  EllipticCurve.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  EllipticCurveTwister.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  Exponentiator.cpp
+  ExponentiatorFactory.cpp
+  FFT.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  FiniteFieldCubicExtension.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  FiniteFieldQuadraticExtension.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  isaac32_engine.cpp
+  main.cpp
+  FiniteFieldPrime.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  Power.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  Random.cpp
+e:\projects\elliptic_curves\elliptic_curves\random.cpp(44): warning C4244: '=': conversion from 'unsigned short' to 'unsigned char', possible loss of data
+  elliptic_curves.vcxproj -> E:\Projects\elliptic_curves\lib\Win32\Release\elliptic_curves.lib

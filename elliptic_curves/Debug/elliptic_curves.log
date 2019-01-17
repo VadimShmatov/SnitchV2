@@ -1,0 +1,140 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  BigInt.cpp
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(57): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(87): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(136): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(171): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(207): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(209): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(257): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(259): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(311): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(342): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(344): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(414): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(449): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(486): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(490): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(560): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(562): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(614): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(645): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(647): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(710): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(745): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(780): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(815): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(855): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(885): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(923): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(963): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(998): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1040): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1044): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1118): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1150): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1154): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1226): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1266): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1301): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1342): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1344): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1396): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1427): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1429): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1476): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1503): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1507): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1582): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1627): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1672): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1717): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1767): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1807): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1855): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1900): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1945): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(1990): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2040): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2080): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2128): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2173): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2218): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2263): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2313): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2353): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2400): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2440): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2475): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2516): warning C4244: 'argument': conversion from 'const __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2518): warning C4244: 'argument': conversion from 'const __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2570): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2601): warning C4244: 'argument': conversion from 'const __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2603): warning C4244: 'argument': conversion from 'const __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2653): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2693): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2728): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2769): warning C4244: 'argument': conversion from 'const __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2771): warning C4244: 'argument': conversion from 'const __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2823): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2854): warning C4244: 'argument': conversion from 'const __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2856): warning C4244: 'argument': conversion from 'const __int64' to 'mp_bitcnt_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2903): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2928): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2953): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(2978): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3008): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3033): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3058): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3083): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3113): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3138): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3163): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3188): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3218): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3243): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3268): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3293): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3323): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3348): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3373): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3398): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3428): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3453): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3478): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3503): warning C4244: 'argument': conversion from 'const __int64' to 'mpir_si', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3536): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3575): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3609): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.h(3663): warning C4244: 'argument': conversion from 'const unsigned __int64' to 'mpir_ui', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\bigint.cpp(122): warning C4244: 'argument': conversion from 'mpir_si' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int8
+          ]
+e:\projects\elliptic_curves\elliptic_curves\bigint.cpp(137): warning C4244: 'argument': conversion from 'mpir_si' to 'const _Ty', possible loss of data
+          with
+          [
+              _Ty=int8
+          ]
+  BinaryNafExponentiator.cpp
+  BitLength.cpp
+e:\projects\elliptic_curves\elliptic_curves\bitlength.cpp(18): warning C4244: 'argument': conversion from 'unsigned __int64' to 'unsigned long', possible loss of data
+  EllipticCurve.cpp
+  Exponentiator.cpp
+  ExponentiatorFactory.cpp
+  FiniteFieldCubicExtension.cpp
+  FiniteFieldQuadraticExtension.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(47): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(72): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  isaac32_engine.cpp
+  main.cpp
+  FiniteFieldPrime.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(47): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(72): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+  Random.cpp
+e:\projects\elliptic_curves\elliptic_curves\random.cpp(44): warning C4244: '=': conversion from 'unsigned short' to 'unsigned char', possible loss of data
+  Generating Code...
+FiniteFieldPrime.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+FiniteFieldQuadraticExtension.obj : warning LNK4221: This object file does not define any previously undefined public symbols, so it will not be used by any link operation that consumes this library
+  elliptic_curves.vcxproj -> E:\Projects\elliptic_curves\lib\Win32\Debug\elliptic_curves.lib

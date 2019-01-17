@@ -1,0 +1,158 @@
+﻿  anonimous_reviews.cpp
+e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(195): warning C4244: 'argument': conversion from '__int64' to 'picosha2::word_t', possible loss of data
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(293): note: see reference to function template instantiation 'void picosha2::hash256_one_by_one::process<RaIter>(RaIter,RaIter)' being compiled
+          with
+          [
+              RaIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(325): note: see reference to function template instantiation 'void picosha2::impl::hash256_impl<InIter,OutIter>(RaIter,RaIter,OutIter,OutIter,int,std::random_access_iterator_tag)' being compiled
+          with
+          [
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=picosha2::byte_t *,
+              RaIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(346): note: see reference to function template instantiation 'void picosha2::hash256<InIter,picosha2::byte_t*>(InIter,InIter,OutIter,OutIter,int)' being compiled
+          with
+          [
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=picosha2::byte_t *
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(360): note: see reference to function template instantiation 'void picosha2::hash256_hex_string<std::_String_const_iterator<std::_String_val<std::_Simple_types<_Ty>>>>(InIter,InIter,std::string &)' being compiled
+          with
+          [
+              _Ty=char,
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  Database.cpp
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(39): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(53): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(67): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(93): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(96): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(99): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(102): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(116): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(187): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(227): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(252): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(255): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(258): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(261): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(275): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(308): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(349): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(389): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(409): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(426): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(449): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(469): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(472): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(475): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(478): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(481): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(495): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(510): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(547): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\database.cpp(591): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(195): warning C4244: 'argument': conversion from '__int64' to 'picosha2::word_t', possible loss of data
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(293): note: see reference to function template instantiation 'void picosha2::hash256_one_by_one::process<RaIter>(RaIter,RaIter)' being compiled
+          with
+          [
+              RaIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(325): note: see reference to function template instantiation 'void picosha2::impl::hash256_impl<InIter,OutIter>(RaIter,RaIter,OutIter,OutIter,int,std::random_access_iterator_tag)' being compiled
+          with
+          [
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=picosha2::byte_t *,
+              RaIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(346): note: see reference to function template instantiation 'void picosha2::hash256<InIter,picosha2::byte_t*>(InIter,InIter,OutIter,OutIter,int)' being compiled
+          with
+          [
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=picosha2::byte_t *
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(360): note: see reference to function template instantiation 'void picosha2::hash256_hex_string<std::_String_const_iterator<std::_String_val<std::_Simple_types<_Ty>>>>(InIter,InIter,std::string &)' being compiled
+          with
+          [
+              _Ty=char,
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  IpfsAdapter.cpp
+e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(195): warning C4244: 'argument': conversion from '__int64' to 'picosha2::word_t', possible loss of data
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(293): note: see reference to function template instantiation 'void picosha2::hash256_one_by_one::process<RaIter>(RaIter,RaIter)' being compiled
+          with
+          [
+              RaIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(325): note: see reference to function template instantiation 'void picosha2::impl::hash256_impl<InIter,OutIter>(RaIter,RaIter,OutIter,OutIter,int,std::random_access_iterator_tag)' being compiled
+          with
+          [
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=picosha2::byte_t *,
+              RaIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(346): note: see reference to function template instantiation 'void picosha2::hash256<InIter,picosha2::byte_t*>(InIter,InIter,OutIter,OutIter,int)' being compiled
+          with
+          [
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=picosha2::byte_t *
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(360): note: see reference to function template instantiation 'void picosha2::hash256_hex_string<std::_String_const_iterator<std::_String_val<std::_Simple_types<_Ty>>>>(InIter,InIter,std::string &)' being compiled
+          with
+          [
+              _Ty=char,
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  Utils.cpp
+e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(195): warning C4244: 'argument': conversion from '__int64' to 'picosha2::word_t', possible loss of data
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(293): note: see reference to function template instantiation 'void picosha2::hash256_one_by_one::process<RaIter>(RaIter,RaIter)' being compiled
+          with
+          [
+              RaIter=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(325): note: see reference to function template instantiation 'void picosha2::impl::hash256_impl<InIter,OutIter>(RaIter,RaIter,OutIter,OutIter,int,std::random_access_iterator_tag)' being compiled
+          with
+          [
+              InIter=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              RaIter=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\utils.cpp(121): note: see reference to function template instantiation 'void picosha2::hash256<std::_String_iterator<std::_String_val<std::_Simple_types<_Ty>>>,std::_String_iterator<std::_String_val<std::_Simple_types<_Ty>>>>(InIter,InIter,OutIter,OutIter,int)' being compiled
+          with
+          [
+              _Ty=char,
+              InIter=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  WebApi.cpp
+e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(195): warning C4244: 'argument': conversion from '__int64' to 'picosha2::word_t', possible loss of data
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(293): note: see reference to function template instantiation 'void picosha2::hash256_one_by_one::process<RaIter>(RaIter,RaIter)' being compiled
+          with
+          [
+              RaIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(325): note: see reference to function template instantiation 'void picosha2::impl::hash256_impl<InIter,OutIter>(RaIter,RaIter,OutIter,OutIter,int,std::random_access_iterator_tag)' being compiled
+          with
+          [
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=picosha2::byte_t *,
+              RaIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(346): note: see reference to function template instantiation 'void picosha2::hash256<InIter,picosha2::byte_t*>(InIter,InIter,OutIter,OutIter,int)' being compiled
+          with
+          [
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>,
+              OutIter=picosha2::byte_t *
+          ]
+  e:\projects\anonimous_reviews\anonimous_reviews\picosha2.h(360): note: see reference to function template instantiation 'void picosha2::hash256_hex_string<std::_String_const_iterator<std::_String_val<std::_Simple_types<_Ty>>>>(InIter,InIter,std::string &)' being compiled
+          with
+          [
+              _Ty=char,
+              InIter=std::_String_const_iterator<std::_String_val<std::_Simple_types<char>>>
+          ]
+  Generating Code...
+  sqlite3.c
+  anonimous_reviews.vcxproj -> E:\Projects\anonimous_reviews\x64\Debug\anonimous_reviews.exe

@@ -1,0 +1,10 @@
+﻿  WebApi.cpp
+e:\projects\anonimous_reviews\anonimous_reviews\webapi.cpp(330): warning C4474: 'printf' : too many arguments passed for format string
+  e:\projects\anonimous_reviews\anonimous_reviews\webapi.cpp(330): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+e:\projects\anonimous_reviews\anonimous_reviews\webapi.cpp(341): warning C4474: 'printf' : too many arguments passed for format string
+  e:\projects\anonimous_reviews\anonimous_reviews\webapi.cpp(341): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+e:\projects\anonimous_reviews\anonimous_reviews\webapi.cpp(355): warning C4474: 'printf' : too many arguments passed for format string
+  e:\projects\anonimous_reviews\anonimous_reviews\webapi.cpp(355): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+e:\projects\anonimous_reviews\anonimous_reviews\webapi.cpp(366): warning C4474: 'printf' : too many arguments passed for format string
+  e:\projects\anonimous_reviews\anonimous_reviews\webapi.cpp(366): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  anonimous_reviews.vcxproj -> E:\Projects\anonimous_reviews\Debug\anonimous_reviews.exe

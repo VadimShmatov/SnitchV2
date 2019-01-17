@@ -1,0 +1,117 @@
+﻿  LibTests.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\libtests\libtests.cpp(450): warning C4101: 'size': unreferenced local variable
+e:\projects\elliptic_curves\libtests\libtests.cpp(503): warning C4101: 'size': unreferenced local variable
+e:\projects\elliptic_curves\libtests\libtests.cpp(613): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\fft.h(337): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  e:\projects\elliptic_curves\elliptic_curves\fft.h(301): note: while compiling class template member function 'void ec_lib::FFTEvaluator<Fr,& r,262144>::iFFT(ec_lib::PrimeField<& r,255>::Elem *,const ec_lib::PrimeField<& r,255>::Elem *)'
+  e:\projects\elliptic_curves\libtests\libtests.cpp(1097): note: see reference to function template instantiation 'void ec_lib::FFTEvaluator<Fr,& r,262144>::iFFT(ec_lib::PrimeField<& r,255>::Elem *,const ec_lib::PrimeField<& r,255>::Elem *)' being compiled
+  e:\projects\elliptic_curves\libtests\libtests.cpp(1045): note: see reference to class template instantiation 'ec_lib::FFTEvaluator<Fr,& r,262144>' being compiled
+e:\projects\elliptic_curves\elliptic_curves\fft.h(343): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(349): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(359): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(360): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(364): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(254): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  e:\projects\elliptic_curves\elliptic_curves\fft.h(225): note: while compiling class template member function 'void ec_lib::FFTEvaluator<Fr,& r,262144>::FFT(ec_lib::PrimeField<& r,255>::Elem *,const ec_lib::PrimeField<& r,255>::Elem *)'
+  e:\projects\elliptic_curves\libtests\libtests.cpp(1047): note: see reference to function template instantiation 'void ec_lib::FFTEvaluator<Fr,& r,262144>::FFT(ec_lib::PrimeField<& r,255>::Elem *,const ec_lib::PrimeField<& r,255>::Elem *)' being compiled
+e:\projects\elliptic_curves\elliptic_curves\fft.h(256): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(258): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(259): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(271): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(272): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(277): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\ellipticcurve.h(658): warning C4018: '<': signed/unsigned mismatch
+  e:\projects\elliptic_curves\elliptic_curves\ellipticcurve.h(650): note: while compiling class template member function 'ec_lib::TatePairingEvaluator<EC,Fp12,ECex,& r,& p,12>::TatePairingEvaluator(void)'
+  e:\projects\elliptic_curves\libtests\libtests.cpp(1270): note: see reference to function template instantiation 'ec_lib::TatePairingEvaluator<EC,Fp12,ECex,& r,& p,12>::TatePairingEvaluator(void)' being compiled
+  e:\projects\elliptic_curves\libtests\libtests.cpp(1270): note: see reference to class template instantiation 'ec_lib::TatePairingEvaluator<EC,Fp12,ECex,& r,& p,12>' being compiled
+e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(362): warning C4101: 'buffer2': unreferenced local variable
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(357): note: while compiling class template member function 'void ec_lib::PrimeField<& r,255>::Mul(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)'
+  e:\projects\elliptic_curves\libtests\modmultiplier.h(97): note: see reference to function template instantiation 'void ec_lib::PrimeField<& r,255>::Mul(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)' being compiled
+  e:\projects\elliptic_curves\libtests\mimc5.h(14): note: see reference to class template instantiation 'ec_lib::PrimeField<& r,255>' being compiled
+e:\projects\elliptic_curves\elliptic_curves\fft.h(104): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+  e:\projects\elliptic_curves\elliptic_curves\fft.h(99): note: while compiling class template member function 'void ec_lib::FFTEvaluator<Fr,& r,262144>::BasicFFT(ec_lib::PrimeField<& r,255>::Elem *,unsigned __int64,const ec_lib::PrimeField<& r,255>::Elem *,unsigned __int64,const ec_lib::PrimeField<& r,255>::Elem &)'
+  e:\projects\elliptic_curves\elliptic_curves\fft.h(311): note: see reference to function template instantiation 'void ec_lib::FFTEvaluator<Fr,& r,262144>::BasicFFT(ec_lib::PrimeField<& r,255>::Elem *,unsigned __int64,const ec_lib::PrimeField<& r,255>::Elem *,unsigned __int64,const ec_lib::PrimeField<& r,255>::Elem &)' being compiled
+e:\projects\elliptic_curves\elliptic_curves\fft.h(113): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\fft.h(115): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'int', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\fft.h(126): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\fft.h(127): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(346): warning C4101: 'buffer2': unreferenced local variable
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(343): note: while compiling class template member function 'void ec_lib::PrimeField<& r,255>::Sqr(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)'
+  e:\projects\elliptic_curves\elliptic_curves\fft.h(335): note: see reference to function template instantiation 'void ec_lib::PrimeField<& r,255>::Sqr(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)' being compiled
+e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(180): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mp_size_t', possible loss of data
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(167): note: while compiling class template member function 'std::ostream &ec_lib::operator <<(std::ostream &,const ec_lib::PrimeField<& p,255>::Elem &)'
+  e:\projects\elliptic_curves\elliptic_curves\ellipticcurve.h(19): note: see reference to class template instantiation 'ec_lib::PrimeField<& p,255>::Elem' being compiled
+  e:\projects\elliptic_curves\libtests\libtests.cpp(443): note: see reference to class template instantiation 'ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem' being compiled
+e:\projects\elliptic_curves\elliptic_curves\power.h(244): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+  e:\projects\elliptic_curves\elliptic_curves\ellipticcurve.h(384): note: see reference to function template instantiation 'void ec_lib::Power::MultiExponentiate<ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>,void ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::SetZero(ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &),void ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Dbl(ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &,const ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &),void ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Copy(ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &,const ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &),void ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Add(ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &,const ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &,const ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &)>(ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &,const ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem *,const ec_lib::Power *,unsigned __int64)' being compiled
+  e:\projects\elliptic_curves\elliptic_curves\ellipticcurve.h(383): note: while compiling class template member function 'void ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::MultiMul(ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &,ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem *,ec_lib::Power *,unsigned __int64)'
+  e:\projects\elliptic_curves\libtests\libtests.cpp(534): note: see reference to function template instantiation 'void ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::MultiMul(ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem &,ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>::Elem *,ec_lib::Power *,unsigned __int64)' being compiled
+  e:\projects\elliptic_curves\libtests\libtests.cpp(417): note: see reference to class template instantiation 'ec_lib::EllipticCurve<Fp2,kA_in_Fp2,kB_in_Fp2,kX0_in_Fp2,kY0_in_Fp2>' being compiled
+e:\projects\elliptic_curves\elliptic_curves\power.h(245): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(247): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'unsigned int', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(258): warning C4018: '<': signed/unsigned mismatch
+e:\projects\elliptic_curves\elliptic_curves\power.h(222): warning C4018: '<': signed/unsigned mismatch
+  e:\projects\elliptic_curves\elliptic_curves\ellipticcurve.h(379): note: see reference to function template instantiation 'void ec_lib::Power::Exponentiate<ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>,void ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::SetZero(ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &),void ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Dbl(ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &,const ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &),void ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Copy(ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &,const ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &),void ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Add(ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &,const ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &,const ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &)>(ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &,const ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &) const' being compiled
+  e:\projects\elliptic_curves\elliptic_curves\ellipticcurve.h(378): note: while compiling class template member function 'void ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Mul(ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &,const ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &,const ec_lib::Power &)'
+  e:\projects\elliptic_curves\libtests\libtests.cpp(1266): note: see reference to function template instantiation 'void ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Mul(ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &,const ec_lib::EllipticCurve<Fp,kA_in_Fp,kB_in_Fp,kX0_in_Fp,kY0_in_Fp>::Elem &,const ec_lib::Power &)' being compiled
+e:\projects\elliptic_curves\elliptic_curves\power.h(228): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'int', possible loss of data
+  merkle.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\libtests\merkle.cpp(11): warning C4244: 'initializing': conversion from 'std::streamoff' to 'uint32_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(180): warning C4244: 'argument': conversion from 'unsigned __int64' to 'mp_size_t', possible loss of data
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(167): note: while compiling class template member function 'std::ostream &ec_lib::operator <<(std::ostream &,const ec_lib::PrimeField<& r,255>::Elem &)'
+  e:\projects\elliptic_curves\libtests\merkle.cpp(24): note: see reference to class template instantiation 'ec_lib::PrimeField<& r,255>::Elem' being compiled
+  mimc5.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(362): warning C4101: 'buffer2': unreferenced local variable
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(357): note: while compiling class template member function 'void ec_lib::PrimeField<& r,255>::Mul(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)'
+  e:\projects\elliptic_curves\libtests\mimc5.cpp(29): note: see reference to function template instantiation 'void ec_lib::PrimeField<& r,255>::Mul(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)' being compiled
+  e:\projects\elliptic_curves\libtests\mimc5.h(14): note: see reference to class template instantiation 'ec_lib::PrimeField<& r,255>' being compiled
+e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(346): warning C4101: 'buffer2': unreferenced local variable
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(343): note: while compiling class template member function 'void ec_lib::PrimeField<& r,255>::Sqr(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)'
+  e:\projects\elliptic_curves\libtests\mimc5.cpp(27): note: see reference to function template instantiation 'void ec_lib::PrimeField<& r,255>::Sqr(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)' being compiled
+  ModMultiplier.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(362): warning C4101: 'buffer2': unreferenced local variable
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(357): note: while compiling class template member function 'void ec_lib::PrimeField<& r,255>::Mul(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)'
+  e:\projects\elliptic_curves\libtests\modmultiplier.h(97): note: see reference to function template instantiation 'void ec_lib::PrimeField<& r,255>::Mul(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)' being compiled
+  e:\projects\elliptic_curves\libtests\mimc5.h(14): note: see reference to class template instantiation 'ec_lib::PrimeField<& r,255>' being compiled
+  Old_main.cpp
+  r1cs.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(362): warning C4101: 'buffer2': unreferenced local variable
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(357): note: while compiling class template member function 'void ec_lib::PrimeField<& r,255>::Mul(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)'
+  e:\projects\elliptic_curves\libtests\r1cs.cpp(614): note: see reference to function template instantiation 'void ec_lib::PrimeField<& r,255>::Mul(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)' being compiled
+  e:\projects\elliptic_curves\libtests\mimc5.h(14): note: see reference to class template instantiation 'ec_lib::PrimeField<& r,255>' being compiled
+  RSA.cpp
+  Structures.cpp
+e:\projects\elliptic_curves\elliptic_curves\power.h(52): warning C4244: 'argument': conversion from 'unsigned __int64' to 'size_t', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\power.h(77): warning C4244: '+=': conversion from 'mp_bitcnt_t' to 'unsigned char', possible loss of data
+e:\projects\elliptic_curves\elliptic_curves\fft.h(579): warning C4554: '&': check operator precedence for possible error; use parentheses to clarify precedence
+  e:\projects\elliptic_curves\elliptic_curves\fft.h(560): note: while compiling class template member function 'void ec_lib::FFTEvaluator<Fr,& r,262144>::Init(void)'
+  e:\projects\elliptic_curves\elliptic_curves\staticinvoker.h(9): note: see reference to function template instantiation 'void ec_lib::FFTEvaluator<Fr,& r,262144>::Init(void)' being compiled
+  e:\projects\elliptic_curves\elliptic_curves\staticinvoker.h(9): note: see reference to class template instantiation 'ec_lib::FFTEvaluator<Fr,& r,262144>' being compiled
+  e:\projects\elliptic_curves\elliptic_curves\staticinvoker.h(7): note: while compiling class template member function 'StaticInvoker<BigDomain>::StaticInvoker(void)'
+  e:\projects\elliptic_curves\libtests\structures.cpp(75): note: see reference to function template instantiation 'StaticInvoker<BigDomain>::StaticInvoker(void)' being compiled
+  e:\projects\elliptic_curves\libtests\structures.cpp(75): note: see reference to class template instantiation 'StaticInvoker<BigDomain>' being compiled
+e:\projects\elliptic_curves\elliptic_curves\fft.h(585): warning C4334: '<<': result of 32-bit shift implicitly converted to 64 bits (was 64-bit shift intended?)
+e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(362): warning C4101: 'buffer2': unreferenced local variable
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(357): note: while compiling class template member function 'void ec_lib::PrimeField<& r,255>::Mul(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)'
+  e:\projects\elliptic_curves\elliptic_curves\fft.h(20): note: see reference to class template instantiation 'ec_lib::PrimeField<& r,255>' being compiled
+e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(346): warning C4101: 'buffer2': unreferenced local variable
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(343): note: while compiling class template member function 'void ec_lib::PrimeField<& r,255>::Sqr(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)'
+e:\projects\elliptic_curves\elliptic_curves\power.h(222): warning C4018: '<': signed/unsigned mismatch
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(476): note: see reference to function template instantiation 'void ec_lib::Power::Exponentiate<ec_lib::PrimeField<& r,255>,void ec_lib::PrimeField<& r,255>::SetOne(ec_lib::PrimeField<& r,255>::Elem &),void ec_lib::PrimeField<& r,255>::Sqr(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &),void ec_lib::PrimeField<& r,255>::Copy(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &),void ec_lib::PrimeField<& r,255>::Mul(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &)>(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &) const' being compiled
+  e:\projects\elliptic_curves\elliptic_curves\finitefieldprime.h(475): note: while compiling class template member function 'void ec_lib::PrimeField<& r,255>::Exp(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::Power &)'
+  e:\projects\elliptic_curves\elliptic_curves\fft.h(60): note: see reference to function template instantiation 'void ec_lib::PrimeField<& r,255>::Exp(ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::PrimeField<& r,255>::Elem &,const ec_lib::Power &)' being compiled
+e:\projects\elliptic_curves\elliptic_curves\power.h(228): warning C4244: 'initializing': conversion from 'unsigned __int64' to 'int', possible loss of data
+  Generating code
+  All 2136 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  LibTests.vcxproj -> E:\Projects\elliptic_curves\Release\LibTests.exe
